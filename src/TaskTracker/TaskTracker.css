@@ -1,0 +1,122 @@
+.navbar{
+    color: white !important;
+    border-radius: unset;
+    margin-bottom:0;
+    box-shadow: 0 1px 9px 1px rgb(0 0 0 / 35%);
+    grid-area: 1/1/2/2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: var(--border) solid var(--border-color);
+    z-index: 100;
+    background-color: #232f3e !important;
+}
+.navbar-brand{
+    padding:0;
+    color:white !important;
+}
+.card-img, .card-img-bottom, .card-img-top {
+    width: 100%;
+    height: 227px;
+}
+.card{
+    height:350px;
+    margin-bottom:20px;
+    border:unset;
+}
+
+.figure-img {
+    height: 300px;
+}
+.spinner-border {
+    width:10rem;
+    height:10rem;
+}
+
+.mainContentClass{
+    height:89vh;
+    overflow-y:auto;
+}
+
+.breadcrumb {
+    text-transform: capitalize;
+    background:#fff;
+    border-bottom:1px solid #cdcdcd;
+    border-radius:0;
+}
+
+.heading{
+    color: black;
+        text-transform: capitalize;
+}
+.heading {
+    width: 500px;
+    height: 52px;
+    position: relative;
+}
+
+.heading:hover::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 29px;
+    width: 17%;
+    color:black;
+    /* left: 25%; */
+    border-top: 1px double #cdcdcd;
+}
+.breadcrumb>li {
+    display: inline-block;
+    color: #232f3e !important;
+    font-weight: 600;
+}
+.breadcrumb>.active {
+    color: #337ab7 !important;
+}
+.breadcrumb-item+.breadcrumb-item::before {
+    color: #337ab7;
+}
+
+/* scroll bar */
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+    border-radius:10px;
+
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius:10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+    border-radius:10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+    border-radius:10px;
+}
+.cart-icon{
+    position: relative;
+    top: -31px;
+    left: 232px;
+    font-size:2rem;
+    color:grey;
+}
+.card-body{
+    color:black;
+}
+.cart-topnav{
+    position: fixed;
+    left: 96.6%;
+    font-size: 3rem;
+    color: #ffffff;
+    top: 24px;
+    z-index: 101;
+}

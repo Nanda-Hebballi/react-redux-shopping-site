@@ -1,0 +1,22 @@
+.sidenavUl li{
+    list-style-type:none;
+    padding:10px 15px;
+    color:white;
+    margin-bottom:5px;
+}
+.sidenavUl li:hover{
+        border-left: 2px solid #fff;
+}
+.sidenavUl li:hover{
+    text-decoration:none;
+}
+.sidenavClass li i{
+    margin-right:10px;
+}
+
+.sidenavClass{
+    height:90vh;
+    background-color: #232f3e !important;
+    color: white !important;
+    box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+}
