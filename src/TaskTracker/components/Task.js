@@ -36,7 +36,7 @@ function Task(props) {
              : products.map((item,i) => (
               <div className="col-4 col-md-4 col-sm-12" key={i}>
               {props.type?
-                  <Card style={{ width: '18rem',height: '400px' }} >
+                  <Card style={{ width: '18rem' }} >
                       <Link to={`${[props.type]}/${item.id}`}>
                       <Card.Img variant="top" src={item.image} />
                       </Link>
