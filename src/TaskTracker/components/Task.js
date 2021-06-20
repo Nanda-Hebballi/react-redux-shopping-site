@@ -36,7 +36,7 @@ function Task(props) {
              : products.map((item,i) => (
               <div className="col-4 col-md-4 col-sm-12" key={i}>
               {props.type?
-                  <Card style={{ width: '30rem' }} >
+                  <Card style={{ width: '22rem' }} >
                       <Link to={`${[props.type]}/${item.id}`}>
                       <Card.Img variant="top" src={item.image} />
                       </Link>
@@ -50,7 +50,7 @@ function Task(props) {
                           </Card.Text>
                       </Card.Body>
                   </Card>
-              : <Card style={{ width: '19rem' }} >
+              : <Card style={{ width: '22rem' }} >
                       <Link to={`products/category/${item.category}/${item.id}`}>
                       <Card.Img variant="top" src={item.image} />
                       </Link>
