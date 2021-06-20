@@ -50,7 +50,7 @@ function Task(props) {
                           </Card.Text>
                       </Card.Body>
                   </Card>
-              : <Card style={{ width: '30rem' }} >
+              : <Card style={{ width: '19rem' }} >
                       <Link to={`products/category/${item.category}/${item.id}`}>
                       <Card.Img variant="top" src={item.image} />
                       </Link>
