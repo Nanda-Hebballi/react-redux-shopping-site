@@ -30,8 +30,7 @@ function Cart() {
            : products.map((item,i) => (
             <>
                 {/* <Col xs={12} md={2} > */}
-                <Col md={6} className="mb-1">
-                <Col className="cart-col m-1">
+                <Col md={6} className="mb-1 cart-col">
                     <Col md={4}><img src={item.image}/></Col>
                     <Col md={4}>
                     <div className="p-3">
@@ -47,7 +46,6 @@ function Cart() {
                     onChange={(e)=>handleChange(item,e)} /></div>
                     <i class="fa fa-times remove-icon" onClick={()=>removeProduct(item)} aria-hidden="true"></i>
                     </Col>
-                </Col>
                 </Col>
             </>
              ))}
