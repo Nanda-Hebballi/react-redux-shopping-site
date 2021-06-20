@@ -116,10 +116,10 @@
     color:black;
 }
 .cart-topnav{
-    position: fixed;
-    left: 96.6%;
+  position: fixed;
+    left: 90.6%;
     font-size: 3rem;
-    color: #ffffff;
-    top: 24px;
+    color: #fff;
+    top: 9px;
     z-index: 101;
 }
