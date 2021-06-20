@@ -39,8 +39,8 @@ function Cart() {
                       <Card.Img variant="top" src={item.image} />
                       <Card.Body>
                           <Card.Title>
-                            {item.title}
-                            <h5>Price ${item.price} </h5>
+                            <p>{item.title}</p>
+                            <p>Price ${item.price} </p>
                           </Card.Title>
                            <Card.Text>
                            <div>quantity  <input type="number" name="firstName" value={item.quantity}
