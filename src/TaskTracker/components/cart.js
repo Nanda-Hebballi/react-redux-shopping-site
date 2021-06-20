@@ -31,7 +31,7 @@ function Cart() {
             <>
                 {/* <Col xs={12} md={2} > */}
                 <Col md={6} className="mb-1">
-                <Col md={12} className="cart-col m-1">
+                <Col className="cart-col m-1">
                     <Col md={4}><img src={item.image}/></Col>
                     <Col md={4}>
                     <div className="p-3">
