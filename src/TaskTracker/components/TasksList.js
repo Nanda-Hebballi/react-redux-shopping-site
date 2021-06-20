@@ -45,11 +45,11 @@ function TasksList() {
             console.log(error);
         })
     }
-    
+
     return (
-        < >
+        <div class="row">
              <Task type = {type}/>
-        </>
+        </div>
     )
 }
 
