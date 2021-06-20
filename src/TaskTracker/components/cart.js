@@ -20,7 +20,7 @@ function Cart() {
     return (
       <>
         <Row className="cart-row">
-         {Object.keys(products).length === 0 ? 
+         {Object.keys(products).length === 0 ?
             <div>
                 {/* <Spinner animation="border" role="status">
                     <span className=""></span>
@@ -35,7 +35,7 @@ function Cart() {
                     <Col md={4}><img src={item.image}/></Col>
                     <Col md={4}>
                     <div className="p-3">
-                        <h5>{item.title}</h5>
+                        <h6>{item.title}</h6>
                         <p>$ {item.price}</p>
                     </div>
                     </Col>
