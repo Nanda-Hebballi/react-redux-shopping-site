@@ -47,9 +47,9 @@ function TasksList() {
     }
 
     return (
-        <div class="row">
+        < >
              <Task type = {type}/>
-        </div>
+        </>
     )
 }
 
