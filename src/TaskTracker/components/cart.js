@@ -33,15 +33,17 @@ function Cart() {
             </div>
            : products.map((item,i) => (
              <Row className="cart-row">
+              <div className="cart-col">
                 {/* <Col xs={12} md={2} > */}
-                    <Col md={4}><img src={item.image}/></Col>
-                    <Col md={4}>
+                  <Col md={1}></Col>
+                    <Col md={3}><img src={item.image}/></Col>
+                    <Col md={3}>
                     <div className="p-3">
                         <h6>{item.title}</h6>
                         <p>$ {item.price}</p>
                     </div>
                     </Col>
-                    <Col md={4}>
+                    <Col md={3}>
                      <div className="p-3">
                         <h5>Price ${item.price} </h5>
                     </div>
@@ -49,6 +51,8 @@ function Cart() {
                     onChange={(e)=>handleChange(item,e)} /></div>
                     <i class="fa fa-times remove-icon" onClick={()=>removeProduct(item)} aria-hidden="true"></i>
                     </Col>
+                    <Col md={2}></Col>
+                  </div>
                 </Row>
              ))}
       </>
