@@ -19,7 +19,11 @@ function Cart() {
 
     return (
       <>
-        <Row className="cart-row">
+        <Row className="mb-2">
+            <Col md={12}>
+               <h3> Total Price : $ {total}</h3>
+            </Col>
+        </Row>
          {Object.keys(products).length === 0 ?
             <div>
                 {/* <Spinner animation="border" role="status">
@@ -28,9 +32,9 @@ function Cart() {
                 <h4>No Items Added to cart</h4>
             </div>
            : products.map((item,i) => (
-            <>
+             <Row className="cart-row">
                 {/* <Col xs={12} md={2} > */}
-                <Col md={6} className="mb-1 cart-col">
+                <Col md={12} className="mb-1 cart-col">
                     <Col md={4}><img src={item.image}/></Col>
                     <Col md={4}>
                     <div className="p-3">
@@ -47,14 +51,8 @@ function Cart() {
                     <i class="fa fa-times remove-icon" onClick={()=>removeProduct(item)} aria-hidden="true"></i>
                     </Col>
                 </Col>
-            </>
+                </Row>
              ))}
-        </Row>
-        <Row className="mb-2">
-            <Col md={12}>
-               <h3> Total Price : $ {total}</h3>
-            </Col>
-        </Row>
       </>
     )
 }
