@@ -11,6 +11,7 @@ import TasksList from './TaskTracker/components/TasksList';
 import TaskDetail from './TaskTracker/components/TaskDetail';
 import Topnav from './TaskTracker/components/Topnav';
 import Sidenav from './TaskTracker/components/Sidenav';
+import Welcomepage from './TaskTracker/components/Welcomepage';
 import './TaskTracker/TaskTracker.css'
 import { Redirect } from 'react-router';
 import { Row,Col,Container } from 'react-bootstrap';
@@ -25,7 +26,7 @@ function App() {
           <Col className="p-0">
           <Topnav/>
            </Col>
-        </Row> 
+        </Row>
          <Row className="p-0 m-0">
           <Col xs={12} md={2} className="sidenavClass">
           <Sidenav/>
@@ -47,6 +48,9 @@ function App() {
                <Route exact path="/cart">
                 <Cart/>
               </Route>
+              <Route exact path="/react-redux-shopping-site/">
+               <Welcomepage/>
+             </Route>
             </Switch>
             <Link to='/cart'>
               <i className="fas fa-shopping-cart cart-topnav"></i>
@@ -54,7 +58,7 @@ function App() {
            </Col>
         </Row>
         </Router>
-    </Container>  
+    </Container>
   </Provider>
   );
 }
